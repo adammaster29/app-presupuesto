@@ -99,6 +99,9 @@ gap: 1rem;
 input{
   width: 100%;
 text-align: center;
+background-color: #f2f2f2; /* Fondo gris claro */
+  color: #808080; /* Texto gris oscuro */
+  border: none;
 }
 td,th{
   border: 0.5px solid #7c7676;
@@ -155,3 +158,12 @@ ol span{
   width: 100%;
   text-align: right;
 }
+ /* contenedor 3  cielo razo */
+ .container__btn{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+ }
+ .container__btn button{
+  width: auto;
+ }
