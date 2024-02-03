@@ -592,7 +592,7 @@ const Home = ({ dark, modeDark, tabladosificadora, setModaluso, openTable, setTa
                                     <button onClick={imprimirTabla}>Imprimir</button>
                               </div>}
                         {optionSelection === 2 &&
-                              <div style={{ background: 'red' }} className="flex-box box-tres">
+                              <div className="flex-box box-tres">
                                     <h1 className='title'>Presupuesto De Obra</h1>
                                     <table className='footer__table'>
 
@@ -622,7 +622,7 @@ const Home = ({ dark, modeDark, tabladosificadora, setModaluso, openTable, setTa
                               </div>
                         }
                         {optionSelection === 3 && (
-                              <div style={{ background: 'blue' }} className="flex-box box-tres">
+                              <div  className="flex-box box-tres">
                                     <h1 className='title'>Presupuesto De Cielo Razo</h1>
                                     <table className='footer__table'>
 
@@ -654,7 +654,7 @@ const Home = ({ dark, modeDark, tabladosificadora, setModaluso, openTable, setTa
                                           </tr>
                                           <tr>
                                                 <td>4</td>
-                                                <td>Pintura o Estuco</td>
+                                                <td> Estuco</td>
                                                 <td>{cantidadgrava}</td>
                                                 <td>{desperdicio}</td>
                                           </tr>
@@ -663,7 +663,7 @@ const Home = ({ dark, modeDark, tabladosificadora, setModaluso, openTable, setTa
                               </div>
                         )}
                          {optionSelection === 5 && (
-                              <div style={{ background: 'blue' }} className="flex-box box-tres">
+                              <div  className="flex-box box-tres">
                                     <h1 className='title'>Presupuesto De Cielo Razo</h1>
                                     <table className='footer__table'>
 
@@ -696,8 +696,8 @@ const Home = ({ dark, modeDark, tabladosificadora, setModaluso, openTable, setTa
                                           <tr>
                                                 <td>4</td>
                                                 <td> Estuco</td>
-                                                <td>{`${estuco} cuñete`}</td>
-                                                <td>{`${estuco * 50 } kilos` }</td>
+                                                <td>{estuco ?  `${estuco} cuñete` :''}</td>
+                                                <td>{estuco ? `${estuco * 50 } kilos`:'' }</td>
                                           </tr>
                                     </table>
                                     <button onClick={imprimirTabla}>Imprimir</button>

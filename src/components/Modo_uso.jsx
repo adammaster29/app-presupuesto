@@ -8,7 +8,7 @@ const Modo_uso = ({setModaluso}) => {
                 <li>Para poder imprimir debes ingresar todos los datos</li>
                 <li>despues del punto (.) solo son decimales</li>
                 <li>Sino sabes la proporcion  dar click en tabla dosificacion, allí encontraras la tablas con cantidades a usar ejemplo concreto 1:2:3, trae una proporcion de 350 kilos de cemento esos kilos debes ingresarlos donde dice cemento, lo mismo con lo demas arena,grava etc.</li>
-                <span><i onClick={()=>setModaluso(false)} class='bx bxs-x-circle'></i></span>
+                <span><i onClick={()=>setModaluso(false)} class='bx bxs-x-circle bx-flashing'></i></span>
                 </ol>
             <img className='hijo' src="/img/tablaUso.png" alt="img" />
             <img className='hijo' src="img/tablaUsoTabla.png" alt="img" />
