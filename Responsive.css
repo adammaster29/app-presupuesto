@@ -1,0 +1,8 @@
+@media screen  and (max-width:480px){
+    .home__flex {
+        grid-template-areas: 
+        "box-uno box-uno box-uno"
+        "box-dos box-dos box-dos"
+        "box-tres box-tres box-tres" ;
+      }
+}

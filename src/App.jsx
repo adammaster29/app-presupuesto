@@ -1,6 +1,8 @@
 import { HashRouter, Route, Routes } from 'react-router-dom'
 import './App.css'
+import '../ModoOscuro.css'
 import Home from './components/Home'
+import '../Responsive.css'
 import { useState } from 'react'
 
 function App() {

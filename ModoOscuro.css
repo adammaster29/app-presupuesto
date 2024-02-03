@@ -1,0 +1,17 @@
+:root{
+    --bg-fondo:rgb(255, 255, 255);
+    --text-title:  #051b34;
+    --text-shadow: 2px 2px 6px gray;
+    --bg-nav: rgb(255, 255, 255);
+    --text-nav:#1c1c49;
+    --bg-nav-cieloRaso:#0d35e9;
+  }
+  
+  .dark{
+    --bg-fondo:rgba(14, 11, 53, 0.514);
+    --text-title: rgb(255, 255, 255);
+    --text-shadow: 2px 2px 6px #051b34;
+    --bg-nav: rgb(16, 16, 70);
+    --text-nav:#fff;
+    --bg-nav-cieloRaso:linear-gradient(30deg, #0400ff, #4ce3f7);
+  }

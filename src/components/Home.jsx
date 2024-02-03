@@ -18,11 +18,11 @@ const Home = ({ dark, modeDark, tabladosificadora, setModaluso, openTable, setTa
 
       const morteroFuncion = () => {
             const areaTotalMortero = valor1 * valor2 * espesorValor;
-            const CementoValores = (cementoValor / 50) * areaTotalMortero;
+            const CementoValores = (cementoValor / 50) * areaTotalMortero ;
             const totalArenaMortero = arenaValor * areaTotalMortero;
             setTotalMortero(areaTotalMortero);
-            setTotalCementoMortero(CementoValores);
-            setArenaTotalValor(totalArenaMortero)
+            setTotalCementoMortero(CementoValores.toFixed(2));
+            setArenaTotalValor(totalArenaMortero.toFixed(2))
 
       }
 
@@ -87,8 +87,8 @@ const Home = ({ dark, modeDark, tabladosificadora, setModaluso, openTable, setTa
                   setcantidcemento(cantCement.toFixed(2) + 1 + " " + "Bultos");
                   setcantidadgrava(gravilla.toFixed(2) + " " + "M3");
                   setcantidadarena(arenaTotal.toFixed(2) + " " + "M3");
-                  setDesperdicio((gravilla + (gravilla * 0.50)) * 50 + " " + "Latas");
-                  setDesperdicioarena((arenaTotal + (arenaTotal * 0.50)) * 50 + " " + "Latas");
+                  setDesperdicio(gravilla.toFixed(2) );
+                  setDesperdicioarena(arenaTotal.toFixed(2));
 
             }
       }
@@ -580,13 +580,13 @@ const Home = ({ dark, modeDark, tabladosificadora, setModaluso, openTable, setTa
                                                 <td>2</td>
                                                 <td>arena</td>
                                                 <td>{cantidadarena}</td>
-                                                <td>{desperdicioarena}</td>
+                                                <td>{desperdicioarena ? `${(desperdicioarena * 50)+(desperdicioarena*0.5) }`:''}</td>
                                           </tr>
                                           <tr>
                                                 <td>3</td>
                                                 <td>grava</td>
                                                 <td>{cantidadgrava}</td>
-                                                <td>{desperdicio}</td>
+                                                <td>{desperdicio ? `${(desperdicio * 50)+(desperdicio*0.5) }`:''}</td>
                                           </tr>
                                     </table>
                                     <button onClick={imprimirTabla}>Imprimir</button>
@@ -605,16 +605,16 @@ const Home = ({ dark, modeDark, tabladosificadora, setModaluso, openTable, setTa
                                           <tr>
                                                 <td>1</td>
                                                 <td>cementos</td>
-                                                <td>{totalcementoMortero}</td>
-                                                <td>{totalcementoMortero}</td>
+                                                <td>{totalcementoMortero ? `${totalcementoMortero} Bultos`:``}</td>
+                                                <td>{totalcementoMortero ? `${totalcementoMortero * 50} Kilos`:``}</td>
 
 
                                           </tr>
                                           <tr>
                                                 <td>2</td>
                                                 <td>arena</td>
-                                                <td>{arenaTotalValor}</td>
-                                                <td>{` ${arenaTotalValor * 50} latas de arena  `}</td>
+                                                <td>{arenaTotalValor ? `${arenaTotalValor} m3`:''}</td>
+                                                <td>{arenaTotalValor ? ` ${arenaTotalValor * 50 +(arenaTotalValor*0.5) } Latas  `:''}</td>
                                           </tr>
 
                                     </table>
@@ -635,28 +635,28 @@ const Home = ({ dark, modeDark, tabladosificadora, setModaluso, openTable, setTa
                                           <tr>
                                                 <td>1</td>
                                                 <td>Laminas</td>
-                                                <td>{totalLaminas}</td>
-                                                <td>{totalLaminas}</td>
+                                                <td>{totalLaminas ? `${totalLaminas} Laminas`:''}</td>
+                                                <td>{totalLaminas ? `${totalLaminas} Laminas`:''}</td>
 
 
                                           </tr>
                                           <tr>
                                                 <td>2</td>
                                                 <td>Viguettas</td>
-                                                <td>{cantidadarena}</td>
-                                                <td>{desperdicioarena}</td>
+                                                <td>{vigueta ? `${vigueta} Vigueta`:''}</td>
+                                                <td>{vigueta ? `${vigueta} Vigueta`:''}</td>
                                           </tr>
                                           <tr>
                                                 <td>3</td>
                                                 <td>Omegas</td>
-                                                <td>{cantidadgrava}</td>
-                                                <td>{desperdicio}</td>
+                                                <td>{omega ? `${omega} Omegas`:''}</td>
+                                                <td>{omega ? `${omega} Omegas`:''}</td>
                                           </tr>
                                           <tr>
                                                 <td>4</td>
                                                 <td> Estuco</td>
-                                                <td>{cantidadgrava}</td>
-                                                <td>{desperdicio}</td>
+                                                <td>{estuco ?  `${estuco} cuñete` :''}</td>
+                                                <td>{estuco ? `${estuco * 50 } kilos`:'' }</td>
                                           </tr>
                                     </table>
                                     <button onClick={imprimirTabla}>Imprimir</button>
@@ -676,22 +676,22 @@ const Home = ({ dark, modeDark, tabladosificadora, setModaluso, openTable, setTa
                                           <tr>
                                                 <td>1</td>
                                                 <td>Laminas</td>
-                                                <td>{totalLaminas}</td>
-                                                <td>{totalLaminas}</td>
+                                                <td>{totalLaminas ? `${totalLaminas} Laminas`:''}</td>
+                                                <td>{totalLaminas ? `${totalLaminas} Laminas`:''}</td>
 
 
                                           </tr>
                                           <tr>
                                                 <td>2</td>
                                                 <td>Viguettas</td>
-                                                <td>{vigueta}</td>
-                                                <td>{vigueta}</td>
+                                                <td>{vigueta ? `${vigueta} Vigueta`:''}</td>
+                                                <td>{vigueta ? `${vigueta} Vigueta`:''}</td>
                                           </tr>
                                           <tr>
                                                 <td>3</td>
                                                 <td>Omegas</td>
-                                                <td>{omega}</td>
-                                                <td>{omega}</td>
+                                                <td>{omega ? `${omega} Omegas`:''}</td>
+                                                <td>{omega ? `${omega} Omegas`:''}</td>
                                           </tr>
                                           <tr>
                                                 <td>4</td>
