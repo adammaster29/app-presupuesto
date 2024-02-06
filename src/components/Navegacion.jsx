@@ -1,12 +1,15 @@
 import React, { useState } from 'react';
 
-const Navegacion = ({ optionsChange, dark, openTable, tableUso, modeDark }) => {
+const Navegacion = ({ Amburguesa,optionsChange, dark, openTable, tableUso, modeDark }) => {
     const [btnChange, setBtnChange] = useState(false);
+  
     const OptionButton = () => {
         setBtnChange(!btnChange);
     }
     return (
-        <ul className="home__navBar">
+     
+       
+        <ul className='home__navBar' >
             <li onClick={tableUso}>Modo de uso.</li>
             <li onClick={() => optionsChange(1)}>Concretos</li>
             <li onClick={() => optionsChange(2)}>Morteros</li>
@@ -23,6 +26,7 @@ const Navegacion = ({ optionsChange, dark, openTable, tableUso, modeDark }) => {
             <li onClick={dark}>{modeDark ? 'Modo Claro' : 'Modo Oscuro'}</li>
             <img className='logo' src="/img/logo.png" alt="logo" />
         </ul>
+    
     );
 };
 

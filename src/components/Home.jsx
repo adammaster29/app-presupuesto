@@ -106,10 +106,15 @@ const Home = ({ dark, modeDark, tabladosificadora, setModaluso, openTable, setTa
                   ventanaImpresion.print();
             }
       };
-
+      const[amburguesa,setAmburguesa] = useState(true)
+      const menuAmburguesa = ()=>{
+          setAmburguesa(!amburguesa);
+      }
+      
       return (
             <div className='padre__home'>
-                  <Navegacion optionsChange={optionsChange} dark={dark} modeDark={modeDark} tableUso={tableUso} openTable={openTable} />
+                  <i onClick={menuAmburguesa} className='bx bx-menu'></i>
+                  {amburguesa &&  <Navegacion menuAmburguesa={menuAmburguesa} optionsChange={optionsChange} dark={dark} modeDark={modeDark} tableUso={tableUso} openTable={openTable} />}
                   <div className="home__flex">
                         {/* contenedor 1 concreto */}
                         {optionSelection === 1 &&
