@@ -6,7 +6,7 @@ import '../Responsive.css'
 import { useState } from 'react'
 
 function App() {
-const[tabladosificadora,setTabladosificadora] = useState(false)
+const[tabladosificadora,setTabladosificadora] = useState(true)
 const[modaluso,setModaluso] = useState(false)
 const[modeDark,setModeDark] = useState(false)
 const dark = ()=>{
@@ -19,7 +19,7 @@ const openTable = ()=>{
   setTabladosificadora(true);
 }
   return (
-    <div className={modeDark ? 'dark':'light'}>
+    <div className={`${modeDark ? 'dark':'App'}`}>
       <HashRouter>
         <Routes>
           <Route path='/' element={<Home modaluso={modaluso}

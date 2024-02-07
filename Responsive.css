@@ -1,7 +1,7 @@
-@media screen  and (max-width:520px){
+@media screen and (max-width: 520px) {
   .home__flex {
     gap: 2rem;
-      /* grid-template-areas: 
+    /* grid-template-areas: 
       "box-uno box-uno box-uno"
       "box-dos box-dos box-dos"
       "box-tres box-tres box-tres" ; */
@@ -9,74 +9,81 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    }
-    .bx-menu{  
-      opacity: 1;
-      left:10px ;
-      top: 10px;
-    }
-    /* menu amburguesa */
-    .home__navBar{ 
-     z-index: 4;
-     position: absolute;
-     width: 160px;
-     margin: 0;
-     min-height: 100%;
-    }
-   
-    h1{
-      font-size: 25px;
-    }
-    .box-uno {
-margin-top: 2rem;
+  }
+  .bx-menu {
+    opacity: 1;
+    left: 10px;
+    top: 10px;
+  }
+  /* menu amburguesa */
+  .home__navBar {
+    z-index: 4;
+    position: absolute;
+    width: 190px;
+    margin: 0;
+    min-height: 100%;
+  }
+  .logo{
+width: 120px;
+  }
 
-    }
-    .box-tres {
-border: 1px solid #000;
-width: 100%;
-gap: 0.5rem;
-           }
+  h1 {
+    font-size: 25px;
+  }
+  .box-uno {
+    margin-top: 3rem;
+    gap: 1rem;
+  }
+  .box-tres {
+    width: 100%;
+    gap: 0.5rem;
+  }
+  .input__label {
+    font-size: 15px;
+  }
 }
 
-
-
-@media screen  and (max-width:480px){
-    .home__flex {
-      gap: 2rem;
-        /* grid-template-areas: 
+@media screen and (max-width: 480px) {
+  .home__flex {
+    gap: 2rem;
+    /* grid-template-areas: 
         "box-uno box-uno box-uno"
         "box-dos box-dos box-dos"
         "box-tres box-tres box-tres" ; */
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      }
-      .bx-menu{  
-        opacity: 1;
-        left:10px ;
-        top: 10px;
-      }
-      /* menu amburguesa */
-      .home__navBar{ 
-       z-index: 4;
-       position: absolute;
-       width: 200px;
-       margin: 0;
-       min-height: 100%;
-      }
-     
-      h1{
-        font-size: 25px;
-      }
-      .box-uno {
- margin-top: 2rem;
- 
-      }
-      .box-tres {
-border: 1px solid #000;
-width: 100%;
-gap: 0.5rem;
-             }
-}
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .bx-menu {
+    opacity: 1;
+    left: 10px;
+    top: 10px;
+  }
+  /* menu amburguesa */
+  .home__navBar {
+    z-index: 4;
+    position: absolute;
+    width: 200px;
+    margin: 0;
+    min-height: 100%;
+  }
 
+  h1 {
+    font-size: 25px;
+  }
+  .box-uno {
+    margin-top: 2rem;
+  }
+  .box-tres {
+    border: 1px solid #000;
+    width: 100%;
+    gap: 0.5rem;
+  }
+  .input__label{
+    font-size: 14px;
+  }
+  .logo{
+    width: 110px;
+      }
+}

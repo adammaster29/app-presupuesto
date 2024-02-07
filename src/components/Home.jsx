@@ -120,7 +120,7 @@ const Home = ({ dark, modeDark, tabladosificadora, setModaluso, openTable, setTa
                         {optionSelection === 1 &&
                               <div className="flex-box box-uno">
                                     <h1 className="title">Presupuesto - Concreto</h1>
-                                    <button onClick={areaValor}>Calcular</button>
+                                    <button className='notranslate' onClick={areaValor}>Calcular</button>
                                     <div className="container__input">
                                           <div className='input__label'>
                                                 <label htmlFor="lado1">Lado1</label>
@@ -196,7 +196,7 @@ const Home = ({ dark, modeDark, tabladosificadora, setModaluso, openTable, setTa
                         {optionSelection === 2 &&
                               <div className="flex-box box-uno">
                                     <h1 className="title">Presupuesto - Mortero</h1>
-                                    <button onClick={morteroFuncion}>Calcular</button>
+                                    <button className='notranslate' onClick={morteroFuncion}>Calcular</button>
                                     <div className="container__input">
                                           <div className='input__label'>
                                                 <label htmlFor="lado1">valor1</label>
@@ -262,7 +262,7 @@ const Home = ({ dark, modeDark, tabladosificadora, setModaluso, openTable, setTa
                               <div className="flex-box box-uno">
                                     <h1 className="title">Cantidad De Laminas</h1>
 
-                                    <button onClick={cieloRazo} >Calcular</button>
+                                    <button className='notranslate' onClick={cieloRazo} >Calcular</button>
 
 
                                     <div className="container__input">
@@ -329,7 +329,7 @@ const Home = ({ dark, modeDark, tabladosificadora, setModaluso, openTable, setTa
                         {optionSelection === 5 &&
                               <div className="flex-box box-uno">
                                     <h1 className="title">Cantidad De Materiales</h1>
-                                    <button onClick={viguetas} >Calcular</button>
+                                    <button className='notranslate' onClick={viguetas} >Calcular</button>
 
                                     <div className="container__input">
                                           
@@ -339,7 +339,7 @@ const Home = ({ dark, modeDark, tabladosificadora, setModaluso, openTable, setTa
                                           </div>
                                           <p>x</p>
                                           <div className='input__label'>
-                                                <label htmlFor="lado1"> 1 Omega x m2 </label>
+                                                <label htmlFor="lado1"> Omega </label>
                                                 <input disabled value={1}  type="number" />
                                           </div>
 
@@ -353,12 +353,12 @@ const Home = ({ dark, modeDark, tabladosificadora, setModaluso, openTable, setTa
                                     <div className="container__input">
                                           
                                           <div className='input__label'>
-                                                <label htmlFor="lado1">Area 2 </label>
+                                                <label htmlFor="lado1">Area</label>
                                                 <input disabled value={totalMedidas} type="number" />
                                           </div>
                                           <p>x</p>
                                           <div className='input__label'>
-                                                <label htmlFor="lado1"> 0.5 vigueta x m2 </label>
+                                                <label htmlFor="lado1">vigueta </label>
                                                 <input disabled value={0.50}  type="number" />
                                           </div>
 
@@ -377,7 +377,7 @@ const Home = ({ dark, modeDark, tabladosificadora, setModaluso, openTable, setTa
                                           </div>
                                           <p>/</p>
                                           <div className='input__label'>
-                                                <label htmlFor="lado1"> 1 cuñete rinde 15m2 </label>
+                                                <label htmlFor="lado1">cuñete</label>
                                                 <input disabled value={15}  type="number" />
                                           </div>
 
@@ -478,7 +478,7 @@ const Home = ({ dark, modeDark, tabladosificadora, setModaluso, openTable, setTa
                                                             <th>1.025</th>
                                                       </tr>
                                                 </table>
-                                                <button onClick={() => setTabladosificadora(false)}>ocultar</button>
+                                                <button className='notranslate' onClick={() => setTabladosificadora(false)}>ocultar</button>
 
 
 
@@ -706,6 +706,7 @@ const Home = ({ dark, modeDark, tabladosificadora, setModaluso, openTable, setTa
                                           </tr>
                                     </table>
                                     <button onClick={imprimirTabla}>Imprimir</button>
+                                   
                               </div>
                         )}
                         

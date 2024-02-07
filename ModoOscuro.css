@@ -5,6 +5,10 @@
     --bg-nav: rgb(255, 255, 255);
     --text-nav:#1c1c49;
     --bg-nav-cieloRaso:#0d35e9;
+    --input:#f2f2f2;
+    --input-color:#808080;
+    --text-label:black;
+    --border-table:#070433;
   }
   
   .dark{
@@ -14,4 +18,10 @@
     --bg-nav: rgb(16, 16, 70);
     --text-nav:#fff;
     --bg-nav-cieloRaso:linear-gradient(30deg, #0400ff, #4ce3f7);
-  }
+    --input: linear-gradient(30deg, #0400ff, #4ce3f7);;
+    --input-color:#a84aa8;
+    --text-label:rgb(255, 255, 255);
+    --border-table:#ffffffc9;
+   }
+ 
+
