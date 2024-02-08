@@ -9,6 +9,7 @@
     --input-color:#808080;
     --text-label:black;
     --border-table:#070433;
+    --placeholder-color:#686767; 
   }
   
   .dark{
@@ -19,9 +20,10 @@
     --text-nav:#fff;
     --bg-nav-cieloRaso:linear-gradient(30deg, #0400ff, #4ce3f7);
     --input: linear-gradient(30deg, #0400ff, #4ce3f7);;
-    --input-color:#a84aa8;
+    --input-color:#ceebe9;
     --text-label:rgb(255, 255, 255);
-    --border-table:#ffffffc9;
+    --border-table:#0d2c49c9;
+    --placeholder-color:#dad8d8; 
    }
  
 

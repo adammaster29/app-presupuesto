@@ -124,68 +124,68 @@ const Home = ({ dark, modeDark, tabladosificadora, setModaluso, openTable, setTa
                                     <div className="container__input">
                                           <div className='input__label'>
                                                 <label htmlFor="lado1">Lado1</label>
-                                                <input value={area} onChange={e => setArea(e.target.value)} type="number" />
+                                                <input value={area} onChange={e => setArea(e.target.value)} placeholder='ingresar' type="number" />
                                           </div>
                                           <p>x</p>
                                           <div className='input__label'>
                                                 <label htmlFor="lado1">Lado2</label>
-                                                <input value={area2} onChange={e => setArea2(e.target.value)} type="number" />
+                                                <input value={area2} onChange={e => setArea2(e.target.value)} placeholder='ingresar' type="number" />
                                           </div>
                                           <p>x</p>
                                           <div className='input__label'>
                                                 <label htmlFor="lado1">Espesor</label>
-                                                <input value={area3} onChange={e => setArea3(e.target.value)} type="number" />
+                                                <input value={area3} onChange={e => setArea3(e.target.value)} placeholder='ingresar' type="number" />
                                           </div>
                                           <p>=</p>
                                           <div className='input__label'>
                                                 <label htmlFor="lado1">Area</label>
-                                                <input disabled value={igual} type="text" />
+                                                <input disabled value={igual} placeholder='disable' type="text" />
                                           </div>
                                     </div>
 
                                     <div className="container__input">
                                           <div className='input__label'>
                                                 <label htmlFor="lado1">Cemento</label>
-                                                <input value={cemento} onChange={e => setCemento(e.target.value)} type="number" />
+                                                <input value={cemento} onChange={e => setCemento(e.target.value)} placeholder='ingresar' type="number" />
                                           </div>
 
                                           <div className='input__label'>
                                                 <label htmlFor="lado1">Area</label>
-                                                <input disabled value={igual} type="number" />
+                                                <input disabled value={igual} placeholder='disable' type="number" />
                                           </div>
                                           <div className='input__label'>
                                                 <label htmlFor="lado1">Total</label>
-                                                <input disabled value={cantidcemento} type="text" />
+                                                <input disabled value={cantidcemento} placeholder='disable' type="text" />
                                           </div>
                                     </div>
 
                                     <div className="container__input">
                                           <div className='input__label'>
                                                 <label htmlFor="lado1">Grava</label>
-                                                <input value={grava} onChange={e => setGrava(e.target.value)} type="number" />
+                                                <input value={grava} onChange={e => setGrava(e.target.value)} placeholder='ingresar' type="number" />
                                           </div>
                                           <div className='input__label'>
                                                 <label htmlFor="lado1">Area</label>
-                                                <input disabled value={igual} type="number" />
+                                                <input disabled value={igual} placeholder='disable' type="number" />
                                           </div>
                                           <div className='input__label'>
                                                 <label htmlFor="lado1">Total</label>
-                                                <input disabled value={cantidadgrava} type="text" />
+                                                <input disabled value={cantidadgrava} placeholder='disable' type="text" />
                                           </div>
                                     </div>
 
                                     <div className="container__input">
                                           <div className='input__label'>
                                                 <label htmlFor="lado1">Arena</label>
-                                                <input value={arena} onChange={e => setArena(e.target.value)} type="number" />
+                                                <input value={arena} onChange={e => setArena(e.target.value)} placeholder='ingresar' type="number" />
                                           </div>
                                           <div className='input__label'>
                                                 <label htmlFor="lado1">Area</label>
-                                                <input disabled value={igual} type="number" />
+                                                <input disabled value={igual} placeholder='disable' type="number" />
                                           </div>
                                           <div className='input__label'>
                                                 <label htmlFor="lado1">Total</label>
-                                                <input value={cantidadarena} disabled type="text" />
+                                                <input value={cantidadarena} placeholder='disable' disabled type="text" />
                                           </div>
                                     </div>
 
@@ -200,38 +200,38 @@ const Home = ({ dark, modeDark, tabladosificadora, setModaluso, openTable, setTa
                                     <div className="container__input">
                                           <div className='input__label'>
                                                 <label htmlFor="lado1">valor1</label>
-                                                <input value={valor1} onChange={e => setValor1(e.target.value)} type="number" />
+                                                <input value={valor1} onChange={e => setValor1(e.target.value)} placeholder='ingresar' type="number" />
                                           </div>
                                           <p>x</p>
                                           <div className='input__label'>
                                                 <label htmlFor="lado1">valor2</label>
-                                                <input value={valor2} onChange={e => setValor2(e.target.value)} type="number" />
+                                                <input value={valor2} onChange={e => setValor2(e.target.value)} placeholder='ingresar' type="number" />
                                           </div>
                                           <p>x</p>
                                           <div className='input__label'>
                                                 <label htmlFor="lado1">Espesor</label>
-                                                <input value={espesorValor} onChange={e => setEspesorValor(e.target.value)} type="number" />
+                                                <input value={espesorValor} onChange={e => setEspesorValor(e.target.value)} placeholder='ingresar' type="number" />
                                           </div>
                                           <p>=</p>
                                           <div className='input__label'>
                                                 <label htmlFor="lado1">Area</label>
-                                                <input disabled value={totalMortero} type="text" />
+                                                <input disabled value={totalMortero} placeholder='disable' type="text" />
                                           </div>
                                     </div>
                                     {/* cemento mortero */}
                                     <div className="container__input">
                                           <div className='input__label'>
                                                 <label htmlFor="lado1">Cemento</label>
-                                                <input value={cementoValor} onChange={e => setCementoValor(e.target.value)} type="number" />
+                                                <input value={cementoValor} onChange={e => setCementoValor(e.target.value)} placeholder='ingresar' type="number" />
                                           </div>
 
                                           <div className='input__label'>
                                                 <label htmlFor="lado1">Area</label>
-                                                <input disabled value={totalMortero} type="number" />
+                                                <input disabled value={totalMortero} placeholder='disable' type="number" />
                                           </div>
                                           <div className='input__label'>
                                                 <label htmlFor="lado1">Total</label>
-                                                <input disabled value={totalcementoMortero} type="text" />
+                                                <input disabled value={totalcementoMortero} placeholder='disable' type="text" />
                                           </div>
                                     </div>
 
@@ -240,15 +240,15 @@ const Home = ({ dark, modeDark, tabladosificadora, setModaluso, openTable, setTa
                                     <div className="container__input">
                                           <div className='input__label'>
                                                 <label htmlFor="lado1">Arena</label>
-                                                <input value={arenaValor} onChange={e => setArenaValor(e.target.value)} type="number" />
+                                                <input value={arenaValor} onChange={e => setArenaValor(e.target.value)} placeholder='ingresar' type="number" />
                                           </div>
                                           <div className='input__label'>
                                                 <label htmlFor="lado1">Area</label>
-                                                <input disabled value={totalMortero} type="number" />
+                                                <input disabled value={totalMortero} placeholder='disable' type="number" />
                                           </div>
                                           <div className='input__label'>
                                                 <label htmlFor="lado1">Total</label>
-                                                <input value={arenaTotalValor} disabled type="text" />
+                                                <input value={arenaTotalValor} placeholder='disable' disabled type="text" />
                                           </div>
                                     </div>
 
@@ -268,35 +268,35 @@ const Home = ({ dark, modeDark, tabladosificadora, setModaluso, openTable, setTa
                                     <div className="container__input">
                                           <div className='input__label'>
                                                 <label htmlFor="lado1">Lado-1 lamina </label>
-                                                <input placeholder='ingresar valor1' value={valor1CieloRazo} onChange={e => setValor1CieloRazo(e.target.value)} type="number" />
+                                                <input placeholder='ingresar' value={valor1CieloRazo} onChange={e => setValor1CieloRazo(e.target.value)} type="number" />
                                           </div>
                                           <p>x</p>
                                           <div className='input__label'>
                                                 <label htmlFor="lado1">Lado-2 lamina </label>
-                                                <input placeholder='ingresar valor2' value={valor2CieloRazo} onChange={e => setValor2CieloRazo(e.target.value)} type="number" />
+                                                <input placeholder='ingresar' value={valor2CieloRazo} onChange={e => setValor2CieloRazo(e.target.value)} type="number" />
                                           </div>
 
                                           <p>=</p>
                                           <div className='input__label'>
                                                 <label htmlFor="lado1">Area-lamina</label>
-                                                <input disabled value={areaTotalCieloRazo} type="text" />
+                                                <input disabled value={areaTotalCieloRazo} placeholder='disable' type="text" />
                                           </div>
                                     </div>
 
                                     <div className="container__input">
                                           <div className='input__label'>
-                                                <label htmlFor="lado1">Area-1</label>
-                                                <input placeholder='Ingresar Area 1' value={Medida1} onChange={e => setMedida1(e.target.value)} type="number" />
+                                                <label htmlFor="lado1">lado-1</label>
+                                                <input placeholder='Ingresar' value={Medida1} onChange={e => setMedida1(e.target.value)} type="number" />
                                           </div>
                                           <p>x</p>
                                           <div className='input__label'>
-                                                <label htmlFor="lado2">Area-2</label>
-                                                <input placeholder='Ingresar Area 2' value={Medida2} onChange={e => setMedida2(e.target.value)} type="number" />
+                                                <label htmlFor="lado2">lado-2</label>
+                                                <input placeholder='Ingresar' value={Medida2} onChange={e => setMedida2(e.target.value)} type="number" />
                                           </div>
                                           <p>=</p>
                                           <div className='input__label'>
                                                 <label htmlFor="lado1">Total Area</label>
-                                                <input disabled value={totalMedidas} type="text" />
+                                                <input disabled value={totalMedidas} placeholder='disable' type="text" />
                                           </div>
                                     </div>
 
@@ -304,17 +304,17 @@ const Home = ({ dark, modeDark, tabladosificadora, setModaluso, openTable, setTa
 
                                           <div className='input__label'>
                                                 <label htmlFor="lado1">Total Area</label>
-                                                <input disabled value={totalMedidas} type="text" />
+                                                <input disabled value={totalMedidas} placeholder='disable' type="text" />
                                           </div>
                                           <p>/</p>
                                           <div className='input__label'>
                                                 <label htmlFor="lado1">Area-Lamina</label>
-                                                <input disabled value={areaTotalCieloRazo} type="number" />
+                                                <input disabled value={areaTotalCieloRazo} placeholder='disable' type="number" />
                                           </div>
                                           <p>=</p>
                                           <div className='input__label'>
                                                 <label htmlFor="lado1">Total-Laminas</label>
-                                                <input disabled value={totalLaminas} type="text" />
+                                                <input disabled value={totalLaminas} placeholder='disable' type="text" />
                                           </div>
                                     </div>
 
@@ -334,8 +334,8 @@ const Home = ({ dark, modeDark, tabladosificadora, setModaluso, openTable, setTa
                                     <div className="container__input">
                                           
                                           <div className='input__label'>
-                                                <label htmlFor="lado1">Area </label>
-                                                <input disabled value={totalMedidas} type="number" />
+                                                <label htmlFor="lado1">Total Area</label>
+                                                <input placeholder='disable' disabled value={totalMedidas} type="number" />
                                           </div>
                                           <p>x</p>
                                           <div className='input__label'>
@@ -346,15 +346,15 @@ const Home = ({ dark, modeDark, tabladosificadora, setModaluso, openTable, setTa
                                           <p>=</p>
                                           <div className='input__label'>
                                                 <label htmlFor="lado1">Total Omegas</label>
-                                                <input disabled value={omega} type="text"/>
+                                                <input placeholder='disable' disabled value={omega} type="text"/>
                                           </div>
                                     </div>
                                     {/* viguetas */}
                                     <div className="container__input">
                                           
                                           <div className='input__label'>
-                                                <label htmlFor="lado1">Area</label>
-                                                <input disabled value={totalMedidas} type="number" />
+                                                <label htmlFor="lado1">Total Area</label>
+                                                <input placeholder='disable' disabled value={totalMedidas} type="number" />
                                           </div>
                                           <p>x</p>
                                           <div className='input__label'>
@@ -364,16 +364,16 @@ const Home = ({ dark, modeDark, tabladosificadora, setModaluso, openTable, setTa
 
                                           <p>=</p>
                                           <div className='input__label'>
-                                                <label htmlFor="lado1">Total Viguettas</label>
-                                                <input disabled value={vigueta} type="text"/>
+                                                <label htmlFor="lado1">Total Viguetas</label>
+                                                <input placeholder='disable' disabled value={vigueta} type="text"/>
                                           </div>
                                     </div>
                                     {/* estuco */}
                                     <div className="container__input">
                                           
                                           <div className='input__label'>
-                                                <label htmlFor="lado1">Area </label>
-                                                <input disabled value={totalMedidas} type="number" />
+                                                <label htmlFor="lado1">Total Area </label>
+                                                <input placeholder='disable' disabled value={totalMedidas} type="number" />
                                           </div>
                                           <p>/</p>
                                           <div className='input__label'>
@@ -384,7 +384,7 @@ const Home = ({ dark, modeDark, tabladosificadora, setModaluso, openTable, setTa
                                           <p>=</p>
                                           <div className='input__label'>
                                                 <label htmlFor="lado1">Total estuco</label>
-                                                <input disabled value={estuco}  type="text"/>
+                                                <input placeholder='disable' disabled value={estuco}  type="text"/>
                                           </div>
                                     </div>
                               </div>}
@@ -398,7 +398,7 @@ const Home = ({ dark, modeDark, tabladosificadora, setModaluso, openTable, setTa
                                           <div className="flex-box box-dos">
 
                                                 <h1 className='title'> Dosificación </h1>
-                                                <table>
+                                                <table className='table__proporcion'>
                                                       <tr>
                                                             <td>Proporcion</td>
                                                             <td>Cemento kg</td>
@@ -478,7 +478,7 @@ const Home = ({ dark, modeDark, tabladosificadora, setModaluso, openTable, setTa
                                                             <th>1.025</th>
                                                       </tr>
                                                 </table>
-                                                <button className='notranslate' onClick={() => setTabladosificadora(false)}>ocultar</button>
+                                                <button className='notranslate btn__ocultar' onClick={() => setTabladosificadora(false)}>ocultar</button>
 
 
 
@@ -491,7 +491,7 @@ const Home = ({ dark, modeDark, tabladosificadora, setModaluso, openTable, setTa
                                           <div className="flex-box box-dos">
 
                                                 <h1 className='title'> Dosificación </h1>
-                                                <table>
+                                                <table className='table__proporcion'>
                                                       <tr>
                                                             <td>Proporcion</td>
                                                             <td>Cemento kg</td>
@@ -554,7 +554,7 @@ const Home = ({ dark, modeDark, tabladosificadora, setModaluso, openTable, setTa
                                                       </tr>
 
                                                 </table>
-                                                <button onClick={() => setTabladosificadora(false)}>ocultar</button>
+                                                <button className='notranslate btn__ocultar' onClick={() => setTabladosificadora(false)}>ocultar</button>
 
 
 

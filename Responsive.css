@@ -1,3 +1,55 @@
+/* responsive 600 */
+@media screen and (max-width: 600px) {
+  .home__flex {
+    gap: 2rem;
+    /* grid-template-areas: 
+      "box-uno box-uno box-uno"
+      "box-dos box-dos box-dos"
+      "box-tres box-tres box-tres" ; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .bx-menu {
+    opacity: 1;
+    left: 10px;
+    top: 10px;
+  }
+  /* menu amburguesa */
+  .home__navBar {
+    z-index: 4;
+    position: absolute;
+    width: 220px;
+    margin: 0;
+    min-height: 100%;
+  }
+  .logo{
+width: 120px;
+  }
+
+  h1 {
+    font-size: 25px;
+  }
+  .box-uno {
+    margin-top: 3rem;
+    gap: 1rem;
+  }
+  .box-tres {
+    width: 100%;
+    gap: 0.5rem;
+  }
+  .input__label {
+    font-size: 15px;
+  }
+  .btn__ocultar{
+    display: none;
+  }
+  .table__proporcion{
+    width: 100%;
+  }
+}
+/* responsive 520 */
 @media screen and (max-width: 520px) {
   .home__flex {
     gap: 2rem;
@@ -42,7 +94,7 @@ width: 120px;
     font-size: 15px;
   }
 }
-
+/* responsive 480 */
 @media screen and (max-width: 480px) {
   .home__flex {
     gap: 2rem;
@@ -76,7 +128,7 @@ width: 120px;
     margin-top: 2rem;
   }
   .box-tres {
-    border: 1px solid #000;
+
     width: 100%;
     gap: 0.5rem;
   }
@@ -86,4 +138,11 @@ width: 120px;
   .logo{
     width: 110px;
       }
+}
+/* responsive 350px */
+@media screen and (max-width:350px) {
+  .table__proporcion {
+    width: 90%;
+    padding: 1rem;
+  }
 }
