@@ -6,28 +6,28 @@ import '../Responsive.css'
 import { useState } from 'react'
 
 function App() {
-const[tabladosificadora,setTabladosificadora] = useState(true)
-const[modaluso,setModaluso] = useState(false)
-const[modeDark,setModeDark] = useState(false)
-const dark = ()=>{
-  setModeDark(!modeDark);
-}
-const tableUso = ()=>{
-  setModaluso(true);
-}
-const openTable = ()=>{
-  setTabladosificadora(true);
-}
+  const [tabladosificadora, setTabladosificadora] = useState(true)
+  const [modaluso, setModaluso] = useState(false)
+  const [modeDark, setModeDark] = useState(false)
+  const dark = () => {
+    setModeDark(!modeDark);
+  }
+  const tableUso = () => {
+    setModaluso(true);
+  }
+  const openTable = () => {
+    setTabladosificadora(true);
+  }
   return (
-    <div className={`${modeDark ? 'dark':'App'}`}>
+    <div className={`${modeDark ? 'dark' : 'App'}`}>
       <HashRouter>
         <Routes>
           <Route path='/' element={<Home modaluso={modaluso}
-tableUso={tableUso} dark={dark} modeDark={modeDark} setModaluso={setModaluso} setTabladosificadora={setTabladosificadora} openTable={openTable} tabladosificadora={tabladosificadora}/> }  />
-
+            tableUso={tableUso} dark={dark} modeDark={modeDark} setModaluso={setModaluso} setTabladosificadora={setTabladosificadora} openTable={openTable} tabladosificadora={tabladosificadora} />} />
+         
         </Routes>
       </HashRouter>
-        
+
     </div>
   )
 }

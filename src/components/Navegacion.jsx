@@ -13,6 +13,7 @@ const Navegacion = ({ Amburguesa,optionsChange, dark, openTable, tableUso, modeD
             <li onClick={tableUso}>Modo de uso.</li>
             <li onClick={() => optionsChange(1)}>Concretos</li>
             <li onClick={() => optionsChange(2)}>Morteros</li>
+            <li onClick={() => optionsChange(4)}>varillas</li>
             <li  onClick={OptionButton}>Cielo Razos
                 {btnChange && (
                     <div className='btn__option-selection'>

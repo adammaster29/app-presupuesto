@@ -2,20 +2,12 @@
 @media screen and (max-width: 600px) {
   .home__flex {
     gap: 2rem;
-    /* grid-template-areas: 
-      "box-uno box-uno box-uno"
-      "box-dos box-dos box-dos"
-      "box-tres box-tres box-tres" ; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-  .bx-menu {
-    opacity: 1;
-    left: 10px;
-    top: 10px;
-  }
+
   /* menu amburguesa */
   .home__navBar {
     z-index: 4;
@@ -32,7 +24,7 @@ width: 120px;
     font-size: 25px;
   }
   .box-uno {
-    margin-top: 3rem;
+    margin-top: 7rem;
     gap: 1rem;
   }
   .box-tres {
@@ -48,15 +40,15 @@ width: 120px;
   .table__proporcion{
     width: 100%;
   }
+  .table__varilla{
+    flex-direction: row;
+    justify-content: space-around;
+  }
 }
 /* responsive 520 */
 @media screen and (max-width: 520px) {
   .home__flex {
     gap: 2rem;
-    /* grid-template-areas: 
-      "box-uno box-uno box-uno"
-      "box-dos box-dos box-dos"
-      "box-tres box-tres box-tres" ; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -64,8 +56,8 @@ width: 120px;
   }
   .bx-menu {
     opacity: 1;
-    left: 10px;
-    top: 10px;
+   margin-right:2px;
+    margin-top: 2px;
   }
   /* menu amburguesa */
   .home__navBar {
@@ -83,7 +75,6 @@ width: 120px;
     font-size: 25px;
   }
   .box-uno {
-    margin-top: 3rem;
     gap: 1rem;
   }
   .box-tres {
@@ -98,20 +89,12 @@ width: 120px;
 @media screen and (max-width: 480px) {
   .home__flex {
     gap: 2rem;
-    /* grid-template-areas: 
-        "box-uno box-uno box-uno"
-        "box-dos box-dos box-dos"
-        "box-tres box-tres box-tres" ; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-  .bx-menu {
-    opacity: 1;
-    left: 10px;
-    top: 10px;
-  }
+
   /* menu amburguesa */
   .home__navBar {
     z-index: 4;
@@ -124,9 +107,7 @@ width: 120px;
   h1 {
     font-size: 25px;
   }
-  .box-uno {
-    margin-top: 2rem;
-  }
+ 
   .box-tres {
 
     width: 100%;
@@ -138,6 +119,10 @@ width: 120px;
   .logo{
     width: 110px;
       }
+      .box-uno {
+        gap: 1rem;
+        margin-top: 13rem;
+      }
 }
 /* responsive 350px */
 @media screen and (max-width:350px) {
@@ -145,4 +130,15 @@ width: 120px;
     width: 90%;
     padding: 1rem;
   }
-}
+  .input__label{
+    font-size: 12px;
+  }
+  button {
+    font-size: 13px;
+    background: #000;
+  }
+  .box-uno {
+    /* margin-top: 20rem; */
+  }
+  }
+
