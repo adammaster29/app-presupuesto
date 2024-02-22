@@ -123,9 +123,9 @@ const Home = ({ dark, modeDark, tabladosificadora, setModaluso, openTable, setTa
       }
 
       const imprimirTabla = () => {
-            if (area === "" || area2 === "" || area3 === "") {
-                  alert("Ingresar valores para poder imprimir");
-            } else {
+            // if (area === "" || area2 === "" || area3 === "") {
+            //       alert("Ingresar valores para poder imprimir");
+            // } else {
                   const contenidoTabla = document.querySelector('.footer__table').outerHTML;
                   const ventanaImpresion = window.open('', '_blank');
                   ventanaImpresion.document.write('<html><head><title>Tabla para imprimir</title></head><body>');
@@ -133,7 +133,7 @@ const Home = ({ dark, modeDark, tabladosificadora, setModaluso, openTable, setTa
                   ventanaImpresion.document.write('</body></html>');
                   ventanaImpresion.document.close();
                   ventanaImpresion.print();
-            }
+            // }
       };
       const [amburguesa, setAmburguesa] = useState(false)
       const menuAmburguesa = () => {
@@ -440,8 +440,8 @@ const Home = ({ dark, modeDark, tabladosificadora, setModaluso, openTable, setTa
                         {/* viguetas y omegas 5 */}
                         {/* contenedor 5  cielo razo omegas*/}
                         {optionSelection === 5 &&
-                              <div className="flex-box box-uno">
-                                    <h1 className="title">Cantidad De Materiales</h1>
+                              <div className="flex-box  new__flex-uno ">
+                                    <h1 className="title">Cielo Raso</h1>
                                     <button className='notranslate' onClick={viguetas} >Calcular</button>
 
                                     <div className="container__input">
@@ -807,7 +807,77 @@ const Home = ({ dark, modeDark, tabladosificadora, setModaluso, openTable, setTa
                                     </div>}
                         </div>
 
+                        {/* tabla omegas */}
+                        {optionSelection === 5 &&
+                              <div>
+                                    {tabladosificadora && (
+                                          <div className="flex-box box-dos new__flex-dos">
 
+                                                <h1 className='title'> Dosificación </h1>
+                                                <table className='table__proporcion'>
+                                                      <tr>
+                                                            <td>#</td>
+                                                            <td> Tipo</td>
+                                                            <td> Diametro</td>
+
+                                                      </tr>
+                                                      <tr>
+                                                            <th>18</th>
+                                                            <th>1-1/4 pulg</th>
+                                                            <th>31.75mm</th>
+
+                                                      </tr>
+                                                      <tr>
+
+                                                            <th>16</th>
+                                                            <th>1-1/18 pulg</th>
+                                                            <th>28.57mm</th>
+                                                      </tr>
+                                                      <tr>
+                                                            <th>14</th>
+                                                            <th>1 pulg</th>
+                                                            <th>24.4mm</th>
+                                                      </tr>
+                                                      <tr>
+                                                            <th>12</th>
+                                                            <th>7/8 pulg</th>
+                                                            <th>22.22mm</th>
+
+                                                      </tr>
+                                                      <tr>
+                                                            <th>10</th>
+                                                            <th>3/4</th>
+                                                            <th>19.0.5mm</th>
+
+                                                      </tr>
+                                                      <tr>
+                                                            <th>8</th>
+                                                            <th>1/2 pulg</th>
+                                                            <th>12.7mm</th>
+
+                                                      </tr>
+                                                      <tr>
+                                                            <th>6</th>
+                                                            <th>3/8</th>
+                                                            <th>9.52mm</th>
+
+                                                      </tr>
+                                                      <tr>
+                                                            <th>4</th>
+                                                            <th>1/4</th>
+                                                            <th>6.35mm</th>
+
+                                                      </tr>
+
+                                                </table>
+                                                <button className='notranslate btn__ocultar btn-table' onClick={() => setTabladosificadora(false)}>ocultar</button>
+
+
+
+                                          </div>
+                                    )}
+                              </div>}
+                        {/* *******************Nuevas tablas****************************** */}
                         {/* tablas de cantidades totales */}
                         {optionSelection === 1 &&
                               <div className="flex-box box-tres">
@@ -958,8 +1028,8 @@ const Home = ({ dark, modeDark, tabladosificadora, setModaluso, openTable, setTa
                               </div>
                         )}
                         {optionSelection === 5 && (
-                              <div className="flex-box box-tres">
-                                    <h1 className='title'>Presupuesto De Cielo Razo</h1>
+                              <div className="flex-box box-tres new__flex-tres">
+                                    <h1 className='title'>Presupuesto De Cielo Raso</h1>
                                     <table className='footer__table'>
 
                                           <tr className='head__table-result'>

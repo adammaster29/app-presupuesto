@@ -90,38 +90,38 @@ position: relative;
    margin-top: 1rem;
    font-size: 18px;
   }
-/* flex grid */
-.flex-box {
- 
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
   
-}
+  .varillas-block{
+    min-width: 100%;
+  }
+  .table__varilla{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .subtilte{
+    font-size: 25px;
+  }
+  .dos-varillas table{
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* flex grid */
+  .flex-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+  }
+
+
 
 .box-uno {
   grid-area: box-uno;
 }
-.varillas-block{
-  min-width: 100%;
-}
-.table__varilla{
-  width: 100%;
-  /* border: 1px solid #000; */
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  /* background: #00000048; */
-}
-.subtilte{
-  font-size: 25px;
-}
-.dos-varillas table{
-width: 100%;
-text-align: center;
-}
-
 .box-dos {
   grid-area: box-dos;
 width: 350px;

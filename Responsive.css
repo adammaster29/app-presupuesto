@@ -24,7 +24,7 @@ width: 120px;
     font-size: 25px;
   }
   .box-uno {
-    margin-top: 7rem;
+    margin-top: 4rem;
     gap: 1rem;
   }
   .box-tres {
@@ -76,6 +76,7 @@ width: 120px;
   }
   .box-uno {
     gap: 1rem;
+    margin-top: 5rem;
   }
   .box-tres {
     width: 100%;
@@ -119,10 +120,11 @@ width: 120px;
   .logo{
     width: 110px;
       }
-      .box-uno {
+      .new__flex-uno,.box-uno {
         gap: 1rem;
         margin-top: 13rem;
       }
+
 }
 /* responsive 350px */
 @media screen and (max-width:350px) {
